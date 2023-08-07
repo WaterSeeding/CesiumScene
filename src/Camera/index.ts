@@ -33,7 +33,7 @@ export default class Camera {
   constructor(
     viewer: Cesium.Viewer,
     gui: dat.GUI,
-    cameraParams?: CameraParamsInterface,
+    cameraParams?: CameraParamsInterface | undefined,
     hideGui?: boolean
   ) {
     this.viewer = viewer;
@@ -43,7 +43,7 @@ export default class Camera {
 
   setInit(
     gui: dat.GUI,
-    cameraParams?: CameraParamsInterface,
+    cameraParams?: CameraParamsInterface | undefined,
     hideGui?: boolean
   ) {
     setParams(this.camera, cameraTable).then(
