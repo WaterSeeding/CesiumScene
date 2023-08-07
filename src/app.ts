@@ -21,13 +21,13 @@ const camera = new Camera(
   gui,
   {
     position: {
-      longitude: 114.053155,
-      latitude: 22.463661,
-      height: 813,
+      longitude: 114.056178,
+      latitude: 22.463280,
+      height: 500,
     },
     headingPitchRoll: {
       heading: 0.0,
-      pitch: -5,
+      pitch: -3,
       roll: 0.0,
     },
   },
@@ -112,16 +112,3 @@ const skyBox = new SkyBoxOnGround(
   },
   false
 );
-
-// let skyObj = new SkyBoxOnGround({
-//   sources: {
-//     positiveX: "./static/skybox/skys/Right.jpg",
-//     negativeX: "./static/skybox/skys/Left.jpg",
-//     positiveY: "./static/skybox/skys/Front.jpg",
-//     negativeY: "./static/skybox/skys/Back.jpg",
-//     positiveZ: "./static/skybox/skys/Up.jpg",
-//     negativeZ: "./static/skybox/skys/Down.jpg",
-//   },
-// });
-
-// viewer.scene.skyBox = skyObj;
